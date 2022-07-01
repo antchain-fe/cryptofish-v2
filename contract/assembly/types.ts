@@ -23,6 +23,5 @@ export type AttributeType = string;
  * @param creator {Address} creator of current collection
  * @param attribute {Attribute} attributes, 6-bit hex
  * @param score {string(u32)} calculate by attribute, higher is better
- * @param favorCount {string(u64)} favor count
  */
 export type Collection = Map<string, string>;

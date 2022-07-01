@@ -1,6 +1,6 @@
 {
   "name": "@antchain/cryptofish",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "start": "npm run dev:web",
@@ -13,9 +13,9 @@
     "test:contract": "asp --config=contract/as-pect.config.js"
   },
   "dependencies": {
-    "@antchain/myassembly": "^0.1.0",
+    "@antchain/myassembly": "^1.0.0-alpha.1",
     "@ant-design/icons": "^4.7.0",
-    "@antchain/jssdk": "^0.1.0",
+    "@antchain/jssdk": "^1.0.0-alpha.1",
     "@assemblyscript/loader": "^0.19.22",
     "@metamask/jazzicon": "^2.0.0",
     "ahooks": "^3.1.4",
@@ -27,7 +27,7 @@
     "umi": "^3.5.20"
   },
   "devDependencies": {
-    "@antchain/myfish": "^0.1.0",
+    "@antchain/myfish": "^1.0.0-alpha.1",
     "@as-pect/cli": "^6.2.4",
     "@types/canvas-confetti": "^1.4.2",
     "@types/execa": "^2.0.0",
