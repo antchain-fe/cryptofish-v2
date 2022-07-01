@@ -11,7 +11,7 @@ const MainLayout: React.FC<React.PropsWithChildren<unknown>> = ({ children }) =>
       <Anchor>
         <Header>
           <Typography.Title onClick={() => history.push('/')} level={3} style={{ margin: 0, cursor: 'pointer' }}>
-            CryptoFish
+            CryptoFish Pro
           </Typography.Title>
           <Connector size="large" />
         </Header>

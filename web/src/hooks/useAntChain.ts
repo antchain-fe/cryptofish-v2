@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useAntchain, Contract } from '@antchain/jssdk/react';
+import { useAntchain, Contract, ContractType } from '@antchain/jssdk/react';
 import abi from '@/abis/cryptofish.json';
 
 const contractName = abi.contract_git_id;
@@ -13,7 +13,7 @@ export function useAntChain() {
   const isConnected = React.useMemo(() => !!account?.accountAddress, [account?.accountAddress]);
   React.useEffect(() => {
     if (antchain && isConnected) {
-      setContract(new Contract({ contractName, abi }, antchain));
+      setContract(new Contract({ contractName, abi, contractType: ContractType.assemblyscript }, antchain));
     } else {
       setContract(null);
     }
