@@ -6,7 +6,7 @@ export default defineConfig({
   },
   fastRefresh: {},
   // publicPath for gh-pages
-  publicPath: process.env.NODE_ENV === 'production' ? '/cryptofish/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/cryptofish-v2/' : '/',
   antd: {
     dark: true,
   },
