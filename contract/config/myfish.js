@@ -1,6 +1,6 @@
 module.exports = {
   contract: {
-    name: 'cryptofish-v2-test-4',
+    name: 'cryptofish-v2',
     version: 1,
   },
 };

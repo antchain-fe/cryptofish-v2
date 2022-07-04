@@ -69,6 +69,9 @@ const HomePage: React.FC<unknown> = () => {
               <Typography.Paragraph>
                 这是一个实验性质的项目，智能合约部署在提供给开发者实验用的实验链上，仅供学习交流使用。你可以使用生成的 CryptoFish 用于自己的实验项目或者头像，但不能用于商业用途。
               </Typography.Paragraph>
+              <Typography.Paragraph>
+                在<a href="https://antchain-fe.github.io/cryptofish">1.0 版本的 CryptoFish</a>，我们通过智能合约选出了 Myfish 的 Logo，V2 版本希望通过这个体验让大家感受到区块链的魅力！
+              </Typography.Paragraph>
             </Typography>
           </MainCard>
         </Space>

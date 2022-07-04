@@ -2,10 +2,10 @@
   "____comment": "This file was generated with Myfish. DO NOT EDIT.",
   "version": "mychain::abi/1.5",
   "contract_version": 1,
-  "contract_git_id": "cryptofish-v2-test-4",
+  "contract_git_id": "cryptofish-v2",
   "vm_type": "wasm",
   "source_type": "AssemblyScript",
-  "compiler_version": "Myfish 1.0.0-alpha.2",
+  "compiler_version": "Myfish 1.0.0-alpha.3",
   "message": "",
   "interfaces": [
     {
