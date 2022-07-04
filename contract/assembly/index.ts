@@ -1,6 +1,6 @@
 import { my, Storage, BaseContract } from '@antchain/myassembly';
 import { Address, Attribute, AttributeType, Collection } from './types';
-import { parseHex2Int, stringifyCollection, stringifyCollections } from './utils';
+import { parseHex2Int, stringifyCollection, stringifyCollections, parseInt2Hex } from './utils';
 
 export default class CryptoFishContract extends BaseContract {
   // You can use this hash to verify the rule image file containing all the fish's attributes
@@ -222,7 +222,9 @@ export default class CryptoFishContract extends BaseContract {
       const fin = parseHex2Int(sourceAttribute[3]) % finRange;
       const eye = parseHex2Int(sourceAttribute[4]) % eyeRange;
       const tail = parseHex2Int(sourceAttribute[5]) % tailRange;
-      const attribute = `${skin.toString()}${background.toString()}${frame.toString()}${fin.toString()}${eye.toString()}${tail.toString()}`;
+      const attribute = `${parseInt2Hex(skin)}${parseInt2Hex(background)}${parseInt2Hex(frame)}${parseInt2Hex(
+        fin,
+      )}${parseInt2Hex(eye)}${parseInt2Hex(tail)}`;
       if (this.isAttributeAvailable(attribute)) return attribute;
     }
     throw new Error('[cryptofish] cannot generate attribute');

@@ -36,7 +36,6 @@ export const CollectionCard: React.FC<ICollectionCardProps> = ({ collection }) =
             <div>
               铸造者: <Tooltip title={collection.creator}>{formatAddress(collection.creator)}</Tooltip>
             </div>
-            <div>点赞数: {collection.favorCount}</div>
           </>
         }
       />
